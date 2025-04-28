@@ -3,35 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biography Website</title>
+  <title>Biography Website for Nate Mybrother</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Dropdown Menu -->
-  <div class="dropdown">
-    <button class="dropdown-toggle">Menu ▾</button>
-    <div class="dropdown-content">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="hobbies.html">Hobbies</a>
+     <!-- Top Bar Area -->
+     <div class="header">
+      <!-- Home Button (left edge) -->
+      <div class="home-button">
+        <a href="index.html" class="home-link">
+          <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 24 24" fill="white">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+        </a>
+      </div>
+    
+      <!-- Title area (centered) -->
+      <div class="title-area">
+        <h1 class="hero">Nate Mybrother</h1>
+        <h2 class="exordium">An American Dreamer</h2>
+      </div>
+    
+      <!-- Menu Button (right edge) -->
+      <div class="dropdown">
+        <button class="dropdown-toggle">Menu ▾</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="hobbies.html">Hobbies</a>
+        </div>
+      </div>
     </div>
+  <!--This is the tiles area -->
+  <div class="tiles">
+    <!--Hobbies Tile -->
+    <div class="tile">
+      <img src="images/hobbies.png" alt="Picture of 4 hobbies">
+      <a href="hobbies.html">
+        <button class="image-button">Hobbies</button>
+      </a>
+    </div>
+      <!--About Tile -->
+      <div class="tile">
+        <img src="images\Nathan_resized.jpg" alt="Picture of 4 hobbies">
+        <a href="hobbies.html">
+          <button class="image-button">About</button>
+        </a>
+      </div>
   </div>
-
-  <main class="container">
-    <section class="hero">
-      <h1>John Doe</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-
-    <section class="content">
-      <h2>Main Section Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </section>
-
-    <section class="cta">
-      <button class="button-primary">Get In Touch</button>
-    </section>
-  </main>
 </body>
 </html>
 

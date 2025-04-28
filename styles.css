@@ -1,0 +1,232 @@
+/* styles.css */
+:root {
+    --c-primary: #2A6F97;
+    --c-secondary: #A9D6E5;
+    --c-background: #F7F9FB;
+    --c-accent: #FFE8D6;
+    --c-text: #2E2E2E;
+    --c-lighttext: white;
+    --c-muted: #B0BEC5;
+  }
+
+  /* header bar styles */
+  .header {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--c-primary);
+    color: var(--c-lighttext);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  .title-area {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .exordium {
+    font-style: italic;
+  }
+
+  .hero {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-family: 'Merriweather', serif;
+  }
+    /* home button */
+    .home-button {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+    }
+    
+    .home-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 50%; 
+      transition: background-color 0.3s ease;
+    }
+    
+    .home-link:hover {
+      background-color: var(--c-secondary);
+    }
+    
+    .home-icon {
+      width: 32px;
+      height: 32px;
+      fill: white;
+      transition: fill 0.3s ease;
+    }
+    
+    .home-link:hover .home-icon {
+      fill: var(--c-primary);
+    }
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+      display: flex; 
+      margin-right:
+    }
+    
+    .dropdown-toggle {
+      background-color: var(--c-text);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5em;
+      cursor: pointer;
+    }
+    
+    .dropdown-toggle:hover {
+      background-color: var(--c-secondary);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: var(--c-text);
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+      border-radius: 0.5em;
+      z-index: 1;
+      overflow: hidden;
+    }
+    
+    .dropdown-content a {
+      display: block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: var(--color-text);
+    }
+    
+    .dropdown-content a:hover {
+      background-color: var(--c-secondary);
+      color: var(--c-primary);
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  /* Tiles styles (on index page) */  
+  .tiles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+ .tile {
+  flex: 1 1 45%;
+  position: relative;
+  max-width: 48%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+  
+  .image-button {
+    position: absolute;
+    bottom: 2%;
+    left: 50%; 
+    transform: translate(-50%);
+    background-color: var(--c-text);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    box-shadow: #F7F9FB;
+  }
+  
+  .image-button:hover {
+    background-color: #235e81;
+  }
+
+  .content {
+    padding: 2rem 0;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .button-primary {
+    background-color: var(--c-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-primary:hover {
+    background-color: #235e81;
+  }
+  
+/* content pages */
+.page-content {
+  background-color: var(--c-secondary);
+  color: var(--c-lighttext);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+  .page-text {
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    color: var(--c-text);
+    font-family: 'Merriweather', serif;
+    text-align: center;
+  }
+
+  .section-head {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: var(--c-text);
+    font-family: 'Merriweather', serif;
+  }
+  
+  .section-exordium {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+    color: var(--c-text);
+    font-family: 'Merriweather', serif;
+  }
+
+  .page-image {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .page-image img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
